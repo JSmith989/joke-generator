@@ -6,7 +6,7 @@ const viewJoke = () => {
   $('#app').append(
     '<button type="button" id="joke-btn" class="btn btn-primary">Primary</button>'
   );
-  '#app'.append('<div id="joke-area"></div>');
+  $('#app').append('<div id="joke-area"></div>');
 
   jokeData.getJokes().then((response) => {
     console.warn(response);
