@@ -1,10 +1,10 @@
 import axios from 'axios';
 
-const getJokes = () => new Promise((resolve, reject) => {
+const getJokes = () =>
+  new Promise((resolve, reject) => {
     axios
-      .get(`https://official-joke-api.appspot.com/random_joke.json`)
+      .get('https://official-joke-api.appspot.com/random_joke')
       .then((response) => {
-          console.warn(response)
         const jokeResponse = response.data;
         const jokeFleet = [];
         if (jokeResponse) {
